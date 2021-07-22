@@ -1,92 +1,36 @@
-@font-face {
-  font-family: "montserrat";
-  src: url(../fonts/montserrat/montserrat-light.ttf);
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "montserrat";
-  src: url(../fonts/montserrat/montserrat-regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "montserrat";
-  src: url(../fonts/montserrat/montserrat-bold.ttf);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "raleway";
-  src: url(../fonts/raleway/raleway-extrabold.ttf);
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: "raleway";
-  src: url(../fonts/raleway/raleway-regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "raleway";
-  src: url(../fonts/raleway/raleway-medium.ttf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "raleway";
-  src: url(../fonts/raleway/raleway-semibold.ttf);
-}
-
-.prices {
-  min-height: 950px;
-  background-color: #fff;
-  width: 1400px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
 .prices__container {
-  width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px 0 20px;
+  background-color: #fff;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  font-family: Montserrat;
+  color: #333333;
+  text-align: center;
 }
 
 .prices__title {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
   font-size: 30px;
   line-height: 37px;
-  text-align: center;
-  color: #333333;
+  font-weight: 600;
+  margin: 0 0 10px 0;
 }
 
 .prices__subtitle {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
   font-size: 24px;
   line-height: 29px;
-  text-align: center;
-  color: #333333;
   margin: 0 0 60px 0;
+  font-weight: 600;
 }
 
 .prices__wrapper {
   display: flex;
-  flex-direction: row;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .prices__block {
-  min-width: 421px;
-  height: 579px;
-  margin: 0 0 0 23px;
+  margin: 0 10px;
+  flex: 1 1 33.333%;
   background: #FFFFFF;
   border: 1px solid #EBEBEB;
-  box-sizing: border-box;
 }
 
 .prices__block:nth-child(2n) {
@@ -94,217 +38,63 @@
 }
 
 .prices__block h3 {
-  margin: 84px 80px 60px 90px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: 600;
+  margin: 50px 0 15px 0;
   font-size: 24px;
   line-height: 29px;
-  color: #333333;
+  font-weight: 600;
 }
 
 .prices__block p {
   margin: 0 0 26px 0;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 21px;
-  text-align: center;
-  color: #333333;
 }
 
-.prices__block-h3 {
-  font-family: Montserrat;
-  font-style: normal;
+.prices__price {
+  display: block;
+  margin: 0 0 50px 0;
   font-weight: 600;
-  font-size: 30px;
-  line-height: 37px;
-  text-align: center;
-  color: #333333;
+  font-size: 24px;
 }
 
 .prices__block button {
-  margin: 0 0 0 80px;
   width: 250px;
-  height: 51.34px;
-  top: 1778px;
+  height: 50px;
   background: #FED100;
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #333333;
+  margin: 0 0 50px 0;
 }
 
-@media (max-width: 1350px) {
-  .prices {
-    text-align: center;
-    width: 900px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .prices__container {
-    text-align: center;
-    width: 900px;
-    margin: 0 auto;
-    text-align: center;
+@media (max-width: 1000px) {
+  .prices__title {
+    margin: 0 0 50px 0;
   }
 
   .prices__subtitle {
     display: none;
   }
 
-  .prices__wrapper {
-    margin: 0 auto;
-  }
-
   .prices__block {
-    min-width: 71px;
-    margin: 0 0 0 9px;
-  }
-
-  .prices__block:nth-child(2n) {
-    background: #F8FBFF;
-    border: none;
-  }
-
-  .prices__block button {
-    margin: 0 auto;
-    width: 250px;
-    height: 51.34px;
-    top: 778px;
-    background: #FED100;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    color: #333333;
-  }
-
-  .prices__block p {
-    margin: 0 0 26px 0;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 21px;
-    text-align: center;
-    color: #333333;
-  }
-
-  .prices__block h3 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    color: #333333;
-  }
-
-  .prices__title {
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 1000px) {
-  .prices {
-    text-align: center;
-    width: 800px;
-    margin: 0 auto;
-  }
-
-  .prices__container {
-    text-align: center;
-    width: 800px;
-    margin: 0 auto;
+    flex: 1 1 50%;
   }
 
   .prices__block:nth-child(3n) {
     display: none;
   }
-
-  .prices__wrapper {
-    margin: 0 auto;
-  }
-
-  .prices__title {
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 750px) {
-
-  .prices__block {
-    width: 261px;
-    margin: 0 0 0 9px;
-  }
-
-  .prices__wrapper {
-    margin: 0 0 0 30px;
-  }
-
-  .prices__title {
-    margin: 0 0 0 -200px;
-  }
 }
 
 @media (max-width: 600px) {
-
-  .prices__wrapper {
-    flex-direction: column;
-    margin: 0 auto;
+  .prices__block {
+    flex: 1 1 100%;
   }
 
   .prices__block:first-child {
+    background: #F8FBFF;
+  }
+
+  .prices__block:nth-child(2) {
     display: none;
-  }
-
-  .prices__block {
-    width: 431px;
-    margin: 0 0 0 50px;
-  }
-
-  .prices__block h3 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 23px;
-    line-height: 27px;
-    text-align: center;
-    color: #333333;
-  }
-
-  .prices__title {
-    margin: 0 0 0 -270px;
-  }
-}
-
-@media (max-width: 520px) {
-
-  .prices__wrapper {
-    margin: 0 0 0 -60px;
-  }
-
-  .prices__title {
-    margin: 0 0 0 -340px;
-  }
-}
-
-@media (max-width: 440px) {
-  .prices__wrapper {
-    margin: 0 0 0 -130px;
-  }
-
-  .prices__title {
-    margin: 0 0 0 -490px;
-  }
-
-  .prices__block button {
-    margin: 0 0 0 10px;
   }
 }
