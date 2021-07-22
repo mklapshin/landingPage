@@ -39,7 +39,7 @@
   src: url(../fonts/raleway/raleway-semibold.ttf);
 }
 
-.prices__container {
+.cars__container {
   background-color: #fff;
   max-width: 1000px;
   margin: 0 auto 50px auto;
@@ -48,94 +48,130 @@
   text-align: center;
 }
 
-.prices__title {
+.cars__title {
   font-size: 30px;
   line-height: 37px;
   font-weight: 600;
   margin: 0 0 10px 0;
 }
 
-.prices__subtitle {
+.cars__subtitle {
   font-size: 24px;
   line-height: 29px;
   margin: 0 0 60px 0;
   font-weight: 600;
 }
 
-.prices__wrapper {
+.cars__menu {
+  width: 700px;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
-.prices__block {
-  margin: 0 10px;
+.cars__link {
+  width: 200px;
+  text-align: center;
   flex: 1 1 33.333%;
-  background: #FFFFFF;
+  height: 30px;
+  padding: 14px 0 0 0;
+  margin: 0 0 0 20px;
   border: 1px solid #EBEBEB;
+}
+
+.cars__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto 0 auto;
+}
+
+.cars__block {
+  min-width: 221px;
+  height: 579px;
+  margin: 10px auto 0 auto;
+  background: #FFFFFF;
+  box-sizing: border-box;
 }
 
 .prices__block:nth-child(2n) {
   border: 1px solid #FED100;
 }
 
-.prices__block h3 {
-  margin: 50px 0 15px 0;
+.cars__block h3 {
+  margin: 50px 0 45px 0;
   font-size: 24px;
   line-height: 29px;
   font-weight: 600;
+  text-align-last: left;
 }
 
-.prices__block p {
+.cars__block p {
   margin: 0 0 26px 0;
   font-size: 16px;
   line-height: 21px;
+  text-align: left;
 }
 
-.prices__price {
-  display: block;
-  margin: 0 0 50px 0;
-  font-weight: 600;
-  font-size: 24px;
+.cars__block p::before {
+  content: "✓  ";
+  font-weight: bold;
 }
 
-.prices__block button {
+.cars__block button {
+  margin: 0 auto;
   width: 250px;
-  height: 50px;
+  height: 51.34px;
   background: #FED100;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  margin: 0 0 50px 0;
+  color: #333333;
 }
 
-@media (max-width: 1000px) {
-  .prices__title {
+.cars__image img {
+  width: 641px;
+  height: 453px;
+}
+
+
+@media (max-width: 900px) {
+  .cars__title {
     margin: 0 0 50px 0;
   }
 
-  .prices__subtitle {
+  .cars__subtitle {
     display: none;
   }
 
-  .prices__block {
-    flex: 1 1 50%;
+  .cars__menu {
+    width: 550px;
   }
 
-  .prices__block:nth-child(3n) {
+  .cars__link {
+    width: 120px;
+  }
+
+  .cars__block {
     display: none;
+  }
+
+  .cars__image {
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 600px) {
-  .prices__block {
-    flex: 1 1 100%;
+@media (max-width: 615px) {
+  .cars__menu {
+    width: 250px;
   }
 
-  .prices__block:first-child {
-    background: #F8FBFF;
+  .cars__link {
+    width: 60px;
+    border: none;
   }
 
-  .prices__block:nth-child(2) {
-    display: none;
+  .cars__image img {
+    width: 321px;
+    height: 227px;
   }
 }
