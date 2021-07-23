@@ -5,6 +5,7 @@
   font-family: Montserrat;
   color: #333333;
   text-align: center;
+  height: 700px;
 }
 
 .cars__title {
@@ -68,7 +69,7 @@
 
 .cars__block {
   min-width: 221px;
-  height: 579px;
+  height: 479px;
   margin: 10px auto 0 auto;
   background: #FFFFFF;
   box-sizing: border-box;
@@ -106,8 +107,8 @@
 }
 
 .cars__image img {
-  width: 641px;
-  height: 453px;
+  max-width: 641px;
+  max-height: 453px;
 }
 
 .cars__mobile {
@@ -171,16 +172,17 @@
 
 @media (max-width: 615px) {
   .cars__menu {
-    width: 250px;
+    max-width: 300px;
   }
 
   .cars__link {
     width: 60px;
     border: none;
+    font-size: 15px;
   }
 
   .cars__image img {
-    width: 321px;
-    height: 227px;
+    max-width: 321px;
+    max-height: 227px;
   }
 }
