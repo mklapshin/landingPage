@@ -1,0 +1,166 @@
+.description {
+  min-height: 550px;
+  background-color: #fff;
+  width: 920px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.description__container {
+  width: 920px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+.description__title {
+  margin: 95px 0 66px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #333333;
+  text-align: center;
+}
+
+.description__content {
+  margin: 0 auto;
+}
+
+.description__wrap-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.description__wrap-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.description__block {
+  width: 450px;
+  margin: 0 10px 77px 0;
+  position: relative;
+  display: flex;
+}
+
+.description__number {}
+
+.description__number-1 {
+  max-width: 51px;
+  max-height: 61px;
+}
+
+.description__number-2 {
+  max-width: 62px;
+  max-height: 61px;
+}
+
+.description__number-3 {
+  max-width: 61px;
+  max-height: 61px;
+}
+
+.description__number-4 {
+  max-width: 66px;
+  max-height: 61px;
+}
+
+.description__text {
+  margin: 0 0 0 42px;
+}
+
+.description__block h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+  margin: 0 0 15px 0;
+}
+
+.description__block p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+@media (max-width: 1100px) {
+  .description__container {
+    margin: 0 0 0 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .description__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description__wrap-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description__wrap-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description__text p {
+    display: none;
+  }
+
+  .description__text {
+    width: 400px;
+  }
+
+  .description__title {
+    margin: 95px 400px 36px 0;
+  }
+}
+
+@media (max-width: 570px) {
+  .description__text {
+    width: 290px;
+  }
+
+  .description__block {
+    width: 450px;
+    margin: 0 10px 30px 0;
+  }
+
+
+  .description__block:nth-child(2n) {
+    width: 450px;
+    margin: 0 10px 50px 0;
+  }
+
+  .description__title {
+    margin: 55px 500px 36px 0;
+  }
+}
+
+@media (max-width: 470px) {
+  .description__text {
+    width: 180px;
+  }
+
+  .description__title {
+    margin: 40px 0 45px -640px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .description__container {
+    margin: 0 auto;
+    padding: 0 5px 0 19px;
+  }
+}
+
+@media (max-width: 370px) {}
