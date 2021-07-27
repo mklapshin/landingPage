@@ -1,11 +1,9 @@
 .reviews {
   background-color: #FED100;
-  height: 606px;
 }
 
 .reviews__container {
   max-width: 1200px;
-  height: 606px;
   margin: 0 auto;
   padding: 20px 0;
   font-family: Montserrat;
@@ -23,7 +21,6 @@
 
 .reviews__content {
   max-width: 1250px;
-  height: 300px;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -32,9 +29,8 @@
 }
 
 .reviews__column {
-  width: 420px;
-  height: 250px;
   margin: 0 3px 0 0;
+  flex: 1 1 33.333%
 }
 
 .reviews__column h3 {
