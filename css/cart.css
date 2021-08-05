@@ -1,7 +1,11 @@
 .cart {
-  min-height: 200px;
+  min-height: 400px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
-@media (max-width: 480px) {}
+.cart iframe {
+  width: 100%;
+  min-height: 400px;
+}
