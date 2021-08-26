@@ -19,9 +19,13 @@
         <header class="fullscreen__header">
           <div class="header__logo">MOVEE</div>
           
-            <button class="c-hamburger c-hamburger--rot">
-              <span>toggle menu</span>
-            </button>
+          <div id="menubtn3">
+            
+          <button id="hamburger" class="c-hamburger">
+            <span>toggle menu</span>
+          </button>
+          </div>
+      
          
           <nav class="header__menu">
             <li class="header__link">Цены</li>
@@ -32,7 +36,15 @@
           <div class="header__contacts">8(029)-999-12-13</div>
         </header>
         <div class="fullscreen__content">
-          <div class="fullscreen__column column_1">
+          <div id="menu2" class="header_mobile-menu">
+            <ul>
+              <li>Контакты</li>
+              <li>Машины</li>
+              <li>Цены</li>
+              <li>Отзывы</li>
+              </ul>
+            </div>
+          <div id="fullscreeninfo" class="fullscreen__column column_1">
             <h1 class="fullscreen__title">Квартирные переезды</h1>
             <p class="fullscreen__subtitle">По Бресту и области</p>
             <div class="image_mobile">
@@ -194,7 +206,7 @@
           <img src="./img/right.png" alt="">
         </div>
       </div>
-      <div class="cars__mobile">
+      <div id="cars_mobile_2" class="cars__mobile">
         <p class="cars__text">Газель 3 метра / 1,5 тонны</p>
         <button class="cars__button">Заказать</button>
       </div>
@@ -223,12 +235,12 @@
               Хотелось отметить
               замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный
               и профессиональный сотрудник, за что ему огромное...</p>
-              <p id="reviews_1" class="reviews__text3">Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы, что
-                упрощает расчет. Безо
-                всяких заморочек, в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в
-                сохранности. Особая благодарность Александру за его Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fugit, odio magnam reprehenderit nemo praesentium quia ipsum neque necessitatibus possimus mollitia libero recusandae, illum explicabo, repellat nostrum nulla dolore rerum vero in. Provident, natus expedita! Quaerat temporibus amet sed maxime. Odio quidem ex velit a, aspernatur doloremque quasi ea minima suscipit molestias asperiores quisquam, cumque odit perspiciatis id, fugit atque repellendus exercitationem amet repellat. Ducimus cum possimus ullam iusto rem natus molestiae doloremque sapiente illo, corrupti reprehenderit repellendus explicabo recusandae aliquid laborum tempora fuga sint officia minus placeat nulla dicta incidunt! Minus, odit vitae molestiae cupiditate iste autem eos voluptatibus.</p>
+              <p id="reviews_1" class="reviews__text3">Обращение к вам за помощью в переезде оставило только положительные впечатления.
+                 Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный
+                и профессиональный сотрудник, за что ему огромное Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fugit, odio magnam reprehenderit nemo praesentium quia ipsum neque necessitatibus possimus mollitia libero recusandae, illum explicabo, repellat nostrum nulla dolore rerum vero in. Provident, natus expedita! Quaerat temporibus amet sed maxime. Odio quidem ex velit a, aspernatur doloremque quasi ea minima suscipit molestias asperiores quisquam, cumque odit perspiciatis id, fugit atque repellendus exercitationem amet repellat. Ducimus cum possimus ullam iusto rem natus molestiae doloremque sapiente illo, corrupti reprehenderit repellendus explicabo recusandae aliquid laborum tempora fuga sint officia minus placeat nulla dicta incidunt! Minus, odit vitae molestiae cupiditate iste autem eos voluptatibus.</p>
               <div id="reviews__btn1"><p id="reviews__button">Читать полностью</p></div>
-          </div>
+              <div id="reviews__btn1_2" class="reviews_button_2"><p id="reviews__button">Скрыть</p></div>
+            </div>
           <div class="reviews__column">
             <h3>Светлана Васильевна</h3>
             <div class="reviews__section">
@@ -247,12 +259,13 @@
               нам опоздали на 1,5
               часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час). Водитель
               заранее позвонил, предупредил, что задерживается. Когда....</p>
-              <p id="reviews_2" class="reviews__text3">Могу на 100% порекомендовать компанию MOVEE и отметить, что цены фиксированы, что
-                упрощает расчет. Безо
-                всяких заморочек, в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в
-                сохранности. Особая благодарность Александру за его Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fugit, odio magnam reprehenderit nemo praesentium quia ipsum neque necessitatibus possimus mollitia libero recusandae, illum explicabo, repellat nostrum nulla dolore rerum vero in. Provident, natus expedita! Quaerat temporibus amet sed maxime. Odio quidem ex velit a, aspernatur doloremque quasi ea minima suscipit molestias asperiores quisquam, cumque odit perspiciatis id, fugit atque repellendus exercitationem amet repellat. Ducimus cum possimus ullam iusto rem natus molestiae doloremque sapiente illo, corrupti reprehenderit repellendus explicabo recusandae aliquid laborum tempora fuga sint officia minus placeat nulla dicta incidunt! Minus, odit vitae molestiae cupiditate iste autem eos voluptatibus.</p>     
+              <p id="reviews_2" class="reviews__text3">Сегодня ( 13.09.2019 ) мы переехали. Остались очень довольны, несмотря на то, что к
+                нам опоздали на 1,5
+                часа. Морально были к этому готовы ( в прошлый переезд в другой фирме тоже опоздали на час). Водитель
+                заранее позвонил, предупредил, что задерживается. Когда.... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fugit, odio magnam reprehenderit nemo praesentium quia ipsum neque necessitatibus possimus mollitia libero recusandae, illum explicabo, repellat nostrum nulla dolore rerum vero in. Provident, natus expedita! Quaerat temporibus amet sed maxime. Odio quidem ex velit a, aspernatur doloremque quasi ea minima suscipit molestias asperiores quisquam, cumque odit perspiciatis id, fugit atque repellendus exercitationem amet repellat. Ducimus cum possimus ullam iusto rem natus molestiae doloremque sapiente illo, corrupti reprehenderit repellendus explicabo recusandae aliquid laborum tempora fuga sint officia minus placeat nulla dicta incidunt! Minus, odit vitae molestiae cupiditate iste autem eos voluptatibus.</p>     
               <div id="reviews__btn2"><p id="reviews__button">Читать полностью</p></div>
-          </div>
+              <div id="reviews__btn2_2" class="reviews_button_2"><p id="reviews__button_2">Скрыть</p></div>
+            </div>
           <div class="reviews__column">
             <h3>Ольга Петровна</h3>
             <div class="reviews__section">
@@ -276,7 +289,8 @@
                 всяких заморочек, в отличии от их конкурентов. Упаковали все качественно и быстро. Все вещи приехали в
                 сохранности. Особая благодарность Александру за его Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fugit, odio magnam reprehenderit nemo praesentium quia ipsum neque necessitatibus possimus mollitia libero recusandae, illum explicabo, repellat nostrum nulla dolore rerum vero in. Provident, natus expedita! Quaerat temporibus amet sed maxime. Odio quidem ex velit a, aspernatur doloremque quasi ea minima suscipit molestias asperiores quisquam, cumque odit perspiciatis id, fugit atque repellendus exercitationem amet repellat. Ducimus cum possimus ullam iusto rem natus molestiae doloremque sapiente illo, corrupti reprehenderit repellendus explicabo recusandae aliquid laborum tempora fuga sint officia minus placeat nulla dicta incidunt! Minus, odit vitae molestiae cupiditate iste autem eos voluptatibus.</p>
               <div id="reviews__btn3"><p>Читать полностью</p></div>
-          </div>
+              <div id="reviews__btn3_2" class="reviews_button_2"><p id="reviews__button">Скрыть</p></div>
+            </div>
         </div>
         <div class="reviews__button">Все отзывы</div>
       </div>
