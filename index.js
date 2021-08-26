@@ -9,39 +9,24 @@ let a = 0;
        }
     });
 
-// Set the date we're counting down to
-var countDownDate = new Date("Aug 11, 2022 17:57:25").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in an element with id="demo"
-  // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  // + minutes + "m " + seconds + "s ";
-
-  document.getElementById("demo").innerHTML = "0" + hours + ":"
-  + minutes + ":" + seconds;
-  demo.style.fontSize = '80px'; 
-
- 
-  // If the count down is finished, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+  let time = 21600;
+  const timeCountdown = document.getElementById("demo");
+  
+  function countTime (){
+      let hours = Math.floor(time/3600);
+      let minutes = Math.floor((time - hours * 3600)/ 60);
+      let seconds = Math.floor((time - hours * 3600 - minutes * 60) % 60);
+      hours = hours <10 ? "0" + hours : hours;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0"+ seconds : seconds;
+  
+      timeCountdown.innerHTML = `${hours}:${minutes}:${seconds}`;
+      time--;
   }
-}, 1000);
+  
+  setInterval(countTime, 1000);
+  
 
 let counter_car = 0;
 
@@ -56,6 +41,7 @@ let counter_car = 0;
         car2.style.border = '1px solid #EBEBEB';
         car1.style.border = '1px solid #FED100';
         car3.style.border = '1px solid #EBEBEB';
+        cars_mobile_2.style.display = 'none';
     });
 
     car2.addEventListener('click', function (event) {  
@@ -69,6 +55,7 @@ let counter_car = 0;
         car2.style.border = '1px solid #FED100';
         car1.style.border = '1px solid #EBEBEB';
         car3.style.border = '1px solid #EBEBEB';
+        cars_mobile_2.style.display = 'none';
     });
 
     car3.addEventListener('click', function (event) {  
@@ -82,6 +69,7 @@ let counter_car = 0;
         car2.style.border = '1px solid #EBEBEB';
         car1.style.border = '1px solid #EBEBEB';
         car3.style.border = '1px solid #FED100';
+        cars_mobile_2.style.display = 'none';
     });
 
     courusel_btn1.addEventListener('click', function (event) {  
@@ -98,6 +86,7 @@ let counter_car = 0;
             car2.style.border = '1px solid #FED100';
             car1.style.border = '1px solid #EBEBEB';
             car3.style.border = '1px solid #EBEBEB';
+            cars_mobile_2.style.display = 'none';
         } else if (counter_car == 1) {
             counter_car += 1;
             courusel_c.style.display = 'none';
@@ -161,18 +150,60 @@ let counter_car = 0;
     reviews__btn1.addEventListener('click', function (event) {  
         reviews01.style.display = 'none';
         reviews_1.style.display = 'block';
+        reviews__btn1.style.display = 'none';
+        reviews__btn1_2.style.display = 'block';
     });
 
     reviews__btn2.addEventListener('click', function (event) {  
         reviews02.style.display = 'none';
         reviews_2.style.display = 'block';
+        reviews__btn2.style.display = 'none';
+        reviews__btn2_2.style.display = 'block';
     });
 
     reviews__btn3.addEventListener('click', function (event) {  
         reviews03.style.display = 'none';
         reviews_3.style.display = 'block';
+        reviews__btn3.style.display = 'none';
+        reviews__btn3_2.style.display = 'block';
     });
 
+    reviews__btn1_2.addEventListener('click', function (event) {  
+        reviews01.style.display = 'block';
+        reviews_1.style.display = 'none';
+        reviews__btn1.style.display = 'block';
+        reviews__btn1_2.style.display = 'none';
+    });
+
+    reviews__btn2_2.addEventListener('click', function (event) {  
+        reviews02.style.display = 'block';
+        reviews_2.style.display = 'none';
+        reviews__btn2.style.display = 'block';
+        reviews__btn2_2.style.display = 'none';
+    });
+
+    reviews__btn3_2.addEventListener('click', function (event) {  
+        reviews03.style.display = 'block';
+        reviews_3.style.display = 'none';
+        reviews__btn3.style.display = 'block';
+        reviews__btn3_2.style.display = 'none';
+    });
+
+
+let menu_counter = 0;
+    menubtn3.addEventListener('click', function (event) {  
+        if (menu_counter % 2 == 0) {
+          menu2.style.display = 'block';
+          fullscreeninfo.style.display = 'none';
+          menu_counter+=1;
+          hamburger.style.backgroundColor = 'red';
+         } else {
+          menu2.style.display = 'none';
+          fullscreeninfo.style.display = 'block'; 
+          menu_counter+=1;
+          hamburger.style.backgroundColor = '#FED100';
+        }
+    });
  }
 
 
