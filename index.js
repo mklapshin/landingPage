@@ -9,11 +9,6 @@ let a = 0;
        }
     });
 
-
-
-
-
-
     const prev = document.getElementById('prev');
     const next = document.getElementById('next');
     const slides = document.querySelectorAll('.slider__slides');
@@ -86,9 +81,6 @@ let a = 0;
     next.addEventListener("click", nextSlide);
     prev.addEventListener("click", prevSlide);
     
-    
-
-
 
   let time = 21600;
   const timeCountdown = document.getElementById("demo");
@@ -107,125 +99,6 @@ let a = 0;
   
   setInterval(countTime, 1000);
   
-
-let counter_car = 0;
-
-    car1.addEventListener('click', function (event) {  
-        counter_car = 0;
-        courusel1_1.style.display = 'block'; 
-        courusel1_2.style.display = 'block';      
-        courusel_c.style.display = 'none';
-        courusel_d.style.display = 'none';
-        courusel3_1.style.display = 'none';
-        courusel2_1.style.display = 'none';
-        car2.style.border = '1px solid #EBEBEB';
-        car1.style.border = '1px solid #FED100';
-        car3.style.border = '1px solid #EBEBEB';
-        cars_mobile_2.style.display = 'none';
-    });
-
-    car2.addEventListener('click', function (event) {  
-        counter_car = 1;
-        courusel_c.style.display = 'block'; 
-        courusel2_1.style.display = 'block';      
-        courusel1_2.style.display = 'none';
-        courusel_d.style.display = 'none';
-        courusel1_1.style.display = 'none';
-        courusel3_1.style.display = 'none';
-        car2.style.border = '1px solid #FED100';
-        car1.style.border = '1px solid #EBEBEB';
-        car3.style.border = '1px solid #EBEBEB';
-        cars_mobile_2.style.display = 'none';
-    });
-
-    car3.addEventListener('click', function (event) {  
-        counter_car = 2;
-        courusel_d.style.display = 'block'; 
-        courusel3_1.style.display = 'block';      
-        courusel_c.style.display = 'none';
-        courusel1_2.style.display = 'none';
-        courusel1_1.style.display = 'none';
-        courusel2_1.style.display = 'none';
-        car2.style.border = '1px solid #EBEBEB';
-        car1.style.border = '1px solid #EBEBEB';
-        car3.style.border = '1px solid #FED100';
-        cars_mobile_2.style.display = 'none';
-    });
-
-    courusel_btn1.addEventListener('click', function (event) {  
-        
-        if (counter_car == 0) {
-            counter_car += 1;
-            courusel1_1.style.display = 'none';      
-            courusel2_1.style.display = 'block'; 
-           // document.getElementById("courusel_change").innerHTML = "<h3>Газель 3 метра</h3><p>Ширина 2 м</p><p>Высота 2 м</p><p>Объём 16 м<sup>3</sup></p><p>Грузоподъёмность 1,5 т</p><button>Заказать</button>"; 
-           // courusel_change.style.display = 'flex'; 
-           // courusel_change.style.flexDirection = 'column';
-            courusel1_2.style.display = 'none';  
-            courusel_c.style.display = 'block';
-            car2.style.border = '1px solid #FED100';
-            car1.style.border = '1px solid #EBEBEB';
-            car3.style.border = '1px solid #EBEBEB';
-            cars_mobile_2.style.display = 'none';
-        } else if (counter_car == 1) {
-            counter_car += 1;
-            courusel_c.style.display = 'none';
-            courusel_d.style.display = 'block';  
-            courusel2_1.style.display = 'none'; 
-            courusel3_1.style.display = 'block'; 
-            car2.style.border = '1px solid #EBEBEB';
-            car1.style.border = '1px solid #EBEBEB';
-            car3.style.border = '1px solid #FED100';
-        }
-        else if (counter_car == 2) {
-            counter_car = 0;
-            courusel_d.style.display = 'none';
-            courusel1_2.style.display = 'block';  
-            courusel3_1.style.display = 'none'; 
-            courusel1_1.style.display = 'block';   
-            car2.style.border = '1px solid #EBEBEB';
-            car1.style.border = '1px solid #FED100';
-            car3.style.border = '1px solid #EBEBEB';
-        }
-    });
-
-
-    courusel_btn2.addEventListener('click', function (event) {  
-        
-        if (counter_car == 0) {
-            counter_car += 1;
-            courusel1_1.style.display = 'none';      
-            courusel2_1.style.display = 'block'; 
-           // document.getElementById("courusel_change").innerHTML = "<h3>Газель 3 метра</h3><p>Ширина 2 м</p><p>Высота 2 м</p><p>Объём 16 м<sup>3</sup></p><p>Грузоподъёмность 1,5 т</p><button>Заказать</button>"; 
-           // courusel_change.style.display = 'flex'; 
-           // courusel_change.style.flexDirection = 'column';
-            courusel1_2.style.display = 'none';  
-            courusel_c.style.display = 'block';
-            car2.style.border = '1px solid #FED100';
-            car1.style.border = '1px solid #EBEBEB';
-            car3.style.border = '1px solid #EBEBEB';
-        } else if (counter_car == 1) {
-            counter_car += 1;
-            courusel_c.style.display = 'none';
-            courusel_d.style.display = 'block';  
-            courusel2_1.style.display = 'none'; 
-            courusel3_1.style.display = 'block'; 
-            car2.style.border = '1px solid #EBEBEB';
-            car1.style.border = '1px solid #EBEBEB';
-            car3.style.border = '1px solid #FED100';
-        }
-        else if (counter_car == 2) {
-            counter_car = 0;
-            courusel_d.style.display = 'none';
-            courusel1_2.style.display = 'block';  
-            courusel3_1.style.display = 'none'; 
-            courusel1_1.style.display = 'block';   
-            car2.style.border = '1px solid #EBEBEB';
-            car1.style.border = '1px solid #FED100';
-            car3.style.border = '1px solid #EBEBEB';
-        }
-    });
- 
 
     reviews__btn1.addEventListener('click', function (event) {  
         reviews01.style.display = 'none';

@@ -85,6 +85,7 @@
 
 .slider__car-image{
   max-width: 69%;
+  margin: 0 0 30px 0;
 }
 
 .slider__order-button{
@@ -302,7 +303,7 @@
       font-size: 20px;
       line-height: 24px;
       color: #333333;
-      padding: 0 0 0 85px;
+      padding: 12px 0 0 85px;
   }
 
   .slider__button-mob:hover{
