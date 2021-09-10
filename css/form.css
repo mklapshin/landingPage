@@ -104,14 +104,14 @@
 }
 
 .form__order-block-1 {
-  width: 100px;
+  width: 430px;
   height: 100px;
   font-size: 96px;
   line-height: 131.4%;
 }
 
 .form__order-block-2 {
-  margin: 20px 0 0 250px;
+  margin: 20px 0 0 20px;
 }
 
 .form__order-button {
@@ -188,6 +188,7 @@
   .form__input-name {
     width: 300px;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   .form__input-phone {
